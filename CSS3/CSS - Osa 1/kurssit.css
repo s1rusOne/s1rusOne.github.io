@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #1a3a5c;
+  --color-secondary: #2d6ea8;
+  --color-accent: #e8a020;
+  --color-bg: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-text: #2d3748;
+  --color-text-muted: #64748b;
+  --color-border: #cbd5e1;
+  --color-row-even: #eef3fa;
+  --color-row-hover: #ddeaf9;
+
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
+  --radius: 8px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0 1.5rem;
+  border-bottom: 3px solid var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.main-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.intro-section,
+.courses-section,
+.summary-section {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  border-left: 4px solid var(--color-accent);
+  padding-left: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-desc {
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-row-even);
+}
+
+tbody tr:hover {
+  background-color: var(--color-row-hover);
+}
+
+tbody td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+td.credits {
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.course-list,
+.category-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.course-list li {
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+}
+
+.course-list li::marker {
+  color: var(--color-accent);
+}
+
+.category-list li {
+  margin-bottom: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.category-list li::marker {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.summary-text {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+.summary-text strong {
+  color: var(--color-primary);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .main-title {
+    font-size: 1.35rem;
+  }
+
+  .intro-section,
+  .courses-section,
+  .summary-section {
+    padding: 1.25rem 1rem;
+  }
+
+  thead th,
+  tbody td {
+    padding: 0.6rem 0.6rem;
+    font-size: 0.875rem;
+  }
+}
