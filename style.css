@@ -1,0 +1,390 @@
+/* ============================================
+   CUSTOM STYLES — HTML-perusteet oppimissivu
+   ============================================ */
+
+:root {
+    --bg-dark: #0d1117;
+    --bg-dark-2: #161b22;
+    --bg-light: #f4f6f9;
+    --accent: #58a6ff;
+    --accent-2: #3fb950;
+    --text-light: #e6edf3;
+    --text-muted: #8b949e;
+    --card-dark: #1c2128;
+    --border-dark: #30363d;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Syne', sans-serif;
+}
+
+/* ---- BASE ---- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-display);
+    background-color: var(--bg-light);
+    color: #1a1a2e;
+    scroll-behavior: smooth;
+}
+
+code {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    background: rgba(88, 166, 255, 0.1);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 0.88em;
+}
+
+/* ---- NAVBAR ---- */
+#mainNav {
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-dark);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    color: var(--text-light) !important;
+    letter-spacing: -0.5px;
+}
+
+.brand-tag {
+    color: var(--accent);
+}
+
+#mainNav .nav-link {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-muted) !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+    background: rgba(88, 166, 255, 0.12);
+    color: var(--accent) !important;
+}
+
+/* ---- HERO ---- */
+.hero-section {
+    background-color: var(--bg-dark);
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(88, 166, 255, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(63, 185, 80, 0.06) 0%, transparent 50%);
+    padding: 90px 0 80px;
+    color: var(--text-light);
+}
+
+.hero-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent-2);
+    background: rgba(63, 185, 80, 0.1);
+    border: 1px solid rgba(63, 185, 80, 0.3);
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.btn-hero {
+    background: var(--accent);
+    color: var(--bg-dark);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 8px;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-hero:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    color: var(--bg-dark);
+}
+
+/* ---- SECTIONS ---- */
+.section-light {
+    background-color: var(--bg-light);
+}
+
+.section-dark {
+    background-color: var(--bg-dark-2);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.section-title.light {
+    color: #ffffff;
+}
+
+.section-sub {
+    color: #555;
+    font-size: 1rem;
+    max-width: 620px;
+    margin-bottom: 0;
+}
+
+.section-sub.light {
+    color: var(--text-muted);
+}
+
+/* ---- CODE BLOCK ---- */
+.code-block {
+    background: var(--bg-dark);
+    border: 1px solid var(--border-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 28px;
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--card-dark);
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background: #ff5f56;
+}
+
+.dot.yellow {
+    background: #ffbd2e;
+}
+
+.dot.green {
+    background: #27c93f;
+}
+
+.code-filename {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-left: 8px;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 20px 24px;
+    overflow-x: auto;
+}
+
+.code-block code {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    color: #e6edf3;
+    background: transparent;
+    padding: 0;
+}
+
+/* ---- TAG CARDS ---- */
+.tag-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.tag-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card {
+    border-color: rgba(88, 166, 255, 0.4);
+    background: rgba(88, 166, 255, 0.03);
+}
+
+.tag-label {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--accent);
+    background: rgba(88, 166, 255, 0.1);
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tag-name {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+.tag-card p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.tag-example {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent-2);
+    background: var(--bg-dark);
+    padding: 8px 12px;
+    border-radius: 6px;
+    line-height: 1.7;
+}
+
+/* ---- CSS METHOD CARDS ---- */
+.css-method-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 24px;
+    height: 100%;
+    transition: box-shadow 0.2s;
+}
+
+.css-method-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.method-number {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.css-method-card h5 {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+.css-method-card p {
+    font-size: 0.88rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* ---- BOOTSTRAP INFO CARD ---- */
+.bootstrap-info-card {
+    background: var(--card-dark);
+    border: 1px solid var(--border-dark);
+    border-radius: 10px;
+    padding: 24px;
+    height: 100%;
+}
+
+.bootstrap-info-card h5 {
+    color: var(--text-light);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bootstrap-info-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+}
+
+/* ---- DEMO CARDS (Bootstrap override) ---- */
+.demo-card {
+    border: 1px solid var(--border-dark) !important;
+    background: var(--card-dark) !important;
+    border-radius: 10px !important;
+}
+
+.demo-card .card-title {
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.demo-card .card-text {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+}
+
+.demo-card .btn-outline-primary {
+    border-color: var(--accent);
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+.demo-card .btn-outline-primary:hover {
+    background: var(--accent);
+    color: var(--bg-dark);
+}
+
+/* ---- FOOTER ---- */
+.site-footer {
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--border-dark);
+    color: var(--text-muted);
+    font-size: 0.88rem;
+}
+
+.footer-sub {
+    font-size: 0.78rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* ---- RESPONSIVE TWEAKS ---- */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        letter-spacing: -1px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .code-block pre {
+        padding: 14px 16px;
+    }
+}
