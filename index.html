@@ -5,22 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML-perusteet | Web-kehitys kurssi</title>
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap"
         rel="stylesheet" />
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- ===================== NAVBAR ===================== -->
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -59,7 +53,6 @@
         </div>
     </nav>
 
-    <!-- ===================== HERO ===================== -->
     <header class="hero-section">
         <div class="container text-center">
             <div class="hero-badge mb-3">HTML-perusteet</div>
@@ -73,7 +66,6 @@
         </div>
     </header>
 
-    <!-- ===================== HTML STRUCTURE ===================== -->
     <section class="section-light py-5" id="structure">
         <div class="container">
             <h2 class="section-title">HTML-sivun perusrakenne</h2>
@@ -103,7 +95,6 @@
         </div>
     </section>
 
-    <!-- ===================== TAGS ===================== -->
     <section class="section-dark py-5" id="tags">
         <div class="container">
             <h2 class="section-title light">Tärkeimmät HTML-tagit</h2>
@@ -114,7 +105,6 @@
 
             <div class="row g-4 mt-2">
 
-                <!-- HTML -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;html&gt;</div>
@@ -125,7 +115,6 @@
                     </div>
                 </div>
 
-                <!-- HEAD -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;head&gt;</div>
@@ -136,7 +125,6 @@
                     </div>
                 </div>
 
-                <!-- BODY -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;body&gt;</div>
@@ -146,7 +134,6 @@
                     </div>
                 </div>
 
-                <!-- H1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;h1&gt; – &lt;h6&gt;</div>
@@ -158,7 +145,6 @@
                     </div>
                 </div>
 
-                <!-- P -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;p&gt;</div>
@@ -168,7 +154,6 @@
                     </div>
                 </div>
 
-                <!-- A -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;a&gt;</div>
@@ -180,7 +165,6 @@
                     </div>
                 </div>
 
-                <!-- IMG -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;img&gt;</div>
@@ -191,7 +175,6 @@
                     </div>
                 </div>
 
-                <!-- BR -->
                 <div class="col-md-6 col-lg-4">
                     <div class="tag-card">
                         <div class="tag-label">&lt;br&gt;</div>
@@ -202,9 +185,8 @@
                     </div>
                 </div>
 
-                <!-- EXTRA: DIV -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="tag-card highlight-card">
+                    <div class="tag-card">
                         <div class="tag-label">&lt;div&gt;</div>
                         <h5 class="tag-name">Lohko-elementti</h5>
                         <p>Yleinen säiliö ryhmittelyyn. Ei itsessään näytä mitään — käytetään CSS:n ja Bootstrapin
@@ -217,7 +199,6 @@
         </div>
     </section>
 
-    <!-- ===================== CSS ===================== -->
     <section class="section-light py-5" id="css">
         <div class="container">
             <h2 class="section-title">CSS-muotoilu</h2>
@@ -241,7 +222,8 @@
                         <div class="method-number">02</div>
                         <h5>Style-tagi</h5>
                         <p>CSS kirjoitetaan suoraan HTML-tiedostoon <code>&lt;style&gt;</code>-tagin sisään
-                            <code>&lt;head&gt;</code>-osiossa.</p>
+                            <code>&lt;head&gt;</code>-osiossa.
+                        </p>
                         <div class="tag-example">&lt;style&gt; body { color: red; } &lt;/style&gt;</div>
                     </div>
                 </div>
@@ -256,7 +238,6 @@
                 </div>
             </div>
 
-            <!-- CSS Example -->
             <div class="code-block mt-4">
                 <div class="code-header">
                     <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
@@ -286,7 +267,6 @@ p {
         </div>
     </section>
 
-    <!-- ===================== BOOTSTRAP ===================== -->
     <section class="section-dark py-5" id="bootstrap">
         <div class="container">
             <h2 class="section-title light">Bootstrap-kirjasto</h2>
@@ -312,7 +292,8 @@ p {
                     <div class="bootstrap-info-card">
                         <h5><i class="bi bi-collection me-2"></i>Valmiit komponentit</h5>
                         <p>Navbar, Card, Button, Modal, Alert — kaikki valmiina, tarvitset vain oikean
-                            <code>class</code>-nimen.</p>
+                            <code>class</code>-nimen.
+                        </p>
                         <div class="tag-example">
                             &lt;button class="btn btn-primary"&gt;<br>
                             &nbsp;&nbsp;Klikkaa tästä<br>
@@ -322,7 +303,6 @@ p {
                 </div>
             </div>
 
-            <!-- Live Bootstrap demo -->
             <div class="mt-5">
                 <h5 class="text-white mb-3">Live-esimerkki: Bootstrap-kortti</h5>
                 <div class="row justify-content-center g-3">
@@ -360,7 +340,6 @@ p {
         </div>
     </section>
 
-    <!-- ===================== FOOTER ===================== -->
     <footer class="site-footer py-4">
         <div class="container text-center">
             <p class="mb-1">
@@ -371,7 +350,6 @@ p {
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
