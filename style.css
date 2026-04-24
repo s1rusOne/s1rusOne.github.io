@@ -116,7 +116,8 @@ code {
 .btn-hero:hover {
     opacity: 0.85;
     transform: translateY(-2px);
-    color: var(--bg-dark);
+    background: var(--accent) !important;
+    color: var(--bg-dark) !important;
 }
 
 .section-light {

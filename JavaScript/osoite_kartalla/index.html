@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osoite kartalla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Osoite kartalla</h1>
+        <div class="search-form">
+            <label for="addr-field">Katuosoite:</label>
+            <input type="text" id="addr-field" placeholder="esim. Yliopistonkatu 36">
+
+            <label for="city-field">Kaupunki:</label>
+            <input type="text" id="city-field" placeholder="esim. Lappeenranta">
+
+            <button onclick="haeOsoite()">Hae</button>
+        </div>
+        <div class="map-container">
+            <iframe id="map-frame"
+                src=""
+                width="100%"
+                height="100%"
+                frameBorder="0">
+            </iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

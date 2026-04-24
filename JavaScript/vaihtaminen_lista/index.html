@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Näytä lista tai ruudukko</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <h2>Näytä lista tai ruudukko</h2>
+
+        <div class="view-btns">
+            <button class="view-btn active" id="btn-grid" onclick="showGrid()">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+            </button>
+            <button class="view-btn" id="btn-list" onclick="showList()">
+                <i class="bi bi-list-ul"></i>
+            </button>
+        </div>
+
+        <div id="image-container" class="grid-container"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
