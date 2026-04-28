@@ -1,0 +1,54 @@
+body {
+    background: #f5f5f5;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.panel-box {
+    border: 2px dashed #aaa;
+    padding: 24px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.panel-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.panel-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+/* Bootstrap accordion active button */
+.accordion-button:not(.collapsed) {
+    background-color: #198754;
+    color: #fff;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1);
+}
+
+/* jQuery UI accordion header */
+#jq-accordion .ui-accordion-header {
+    background: #198754;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+#jq-accordion .ui-accordion-header-active {
+    background: #157347;
+    border-radius: 4px 4px 0 0;
+}
+#jq-accordion .ui-accordion-content {
+    padding: 12px 14px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    font-size: 0.9rem;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 3px;
+}

@@ -101,9 +101,19 @@
                                     Tehtävä 5 - Näytä lista tai ruudukko
                                 </a>
                             </li>
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ajax
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="Ajax/ajax_harjoitus/index.html" target="_blank">
+                                    Tehtävä 1 - Ajax-harjoitus (GitHub API)
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -395,6 +405,47 @@ p {
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light py-5" id="ajax">
+        <div class="container">
+            <h2 class="section-title">Ajax</h2>
+            <p class="section-sub">
+                Ajax (Asynchronous JavaScript and XML) mahdollistaa tiedon hakemisen palvelimelta
+                päivittämättä koko sivua. Käytetään Fetch API:a tai jQuery-kirjastoa HTTP-pyyntöihin.
+            </p>
+            <div class="row g-4 mt-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="tag-card">
+                        <div class="tag-label">Fetch API</div>
+                        <h5 class="tag-name">Moderni tapa</h5>
+                        <p>Selainten sisäänrakennettu rajapinta HTTP-pyyntöihin. Palauttaa Promise-olion.</p>
+                        <div class="tag-example">fetch(url).then(r =&gt; r.json()).then(data =&gt; ...)</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="tag-card">
+                        <div class="tag-label">$.ajax / $.getJSON</div>
+                        <h5 class="tag-name">jQuery Ajax</h5>
+                        <p>jQuery-kirjaston tarjoama tapa tehdä Ajax-kutsuja. Selkeä syntaksi, laaja tuki.</p>
+                        <div class="tag-example">$.getJSON(url, function(data) &#123; ... &#125;)</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="tag-card">
+                        <div class="tag-label">REST API</div>
+                        <h5 class="tag-name">Avoimet rajapinnat</h5>
+                        <p>Julkiset REST-rajapinnat palauttavat dataa JSON-muodossa ilman kirjautumista.</p>
+                        <div class="tag-example">api.github.com/zen<br>api.github.com/users/:name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="Ajax/ajax_harjoitus/index.html" target="_blank" class="btn btn-hero">
+                    Avaa Ajax-harjoitus <i class="bi bi-arrow-right ms-1"></i>
+                </a>
             </div>
         </div>
     </section>
